@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content{
+    width: 90%;
+    height: 280px;
+    border: 2px solid red;
+    display: flex;
+}
+
+.content .trip{
+    font-size: 20px;
+    font-weight: 200;
+}
+.content .input-4{
+    display: flex;
+}
+.content .input-4 input{
+    height: 70px;
+    font-size: 22px;
+    padding-left: 10px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+.content .input-4 input:active{
+    border: none;
+    outline: none;
+}
+
+.content .input-4 i{
+    position: relative;
+    right: 684px;
+    top: 30px;
+    border: 2px solid rgb(4, 50, 50);
+    font-size: 24px;
+    border-radius: 15px;
+    color: rgb(4, 50, 50);
+}
+
+.content .fare{
+    font-size: 20px;
+    font-weight: 200;
+}

@@ -1,0 +1,12 @@
+<?php
+
+include("flight.php");
+include("train.php");
+include("bus.php");
+include("hotel.php");
+include("connect1.php");
+
+$sql= " SELECT bus_id FROM bus " 
+
+
+?>

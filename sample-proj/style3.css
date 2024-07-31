@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(235, 221, 155, 0.7);
+
+
+}
+
+.scanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 400px;
+    width: 400px;
+    height: 400px;
+}
+.image{
+    display: flex;
+    margin-top: 10px;
+
+
+}
+.image img{
+    height: 100px;
+    width: 100px;
+   
+    border: 2px solid black;
+}
+
+.image label{
+    position: relative;
+    top: 45px;
+    padding-left: 8px;
+}
+button{
+    cursor: pointer;
+    margin-top: 10px;
+}

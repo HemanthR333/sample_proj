@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.logo h1{
+    font-size: x-large;
+    letter-spacing: 10px;
+    padding: 4px 4px;
+    color: black;
+}
+.nav-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.right-nav{
+    width: 40%;
+    text-align: right;
+}
+
+
+.right-nav .btn-sm{
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    border: 2px solid black ;
+    color: black;
+    background: transparent;
+    border-radius: 7px;
+    font-size: large;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+.right-nav .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.background{
+    background:url('3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+.first-section{
+    width: 100%;
+    height: 90%;
+}
+
+.box-main{
+    height: 430px;
+    width: 500px;
+   /* border: 2px solid whitesmoke;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px 50px;
+}
+/*.box-main .first{
+    border: 2px solid white;
+    height: 100px;
+    width: 300px;
+}*/
+.box-main .first h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    text-shadow: 0px 0px 7px rgba(9, 9, 9, 0.9);
+    backdrop-filter: blur(6px);
+}
+
+.box-main .first p{
+    font-size: 35px;
+    color: black;
+    font-weight: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 43%;
+    left: 26%;
+    backdrop-filter: blur(8px);
+}
+/*.box-main .second{
+    border: 2px solid white;
+    height: 80px;
+    width: 150px;
+}*/
+.box-main .second input{
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    top: 64%;
+    left: 30%;
+}
+
+.box-main .second button{
+    position: absolute;
+    top: 64%;
+    right: 35%;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: 300;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.box-main .second button:hover{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    
+}
+.container{
+    width: 1276px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 280px;
+    right: 30px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    box-shadow: 0px 0px 7px rgba(2, 2, 2, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.content{
+    width: 1050px;
+    overflow: hidden;
+    display: flex;
+}
+.flight{
+    display: flex;
+    padding-left: 12px;
+    transform: translateX(1050px);
+    transition: .2s transform ease-in-out;
+}
+
+.flight .trip{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.flight .trip input{
+    margin-left: 10px;
+}
+.flight .input-4{
+    display: flex;
+}
+.flight .input-4 input{
+    height: 70px;
+    font-size: 18px;
+    padding-left: 10px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+}
+.flight .input-4 input:active{
+    border: none;
+    outline: none;
+}
+
+.flight .input-4 i{
+    position: relative;
+    right: 574px;
+    top: 30px;
+    border: 2px solid rgb(4, 50, 50);
+    font-size: 24px;
+    border-radius: 15px;
+    color: rgb(4, 50, 50);
+}
+.flight .input-4 select{
+    width: 100px;
+    height: 74px;
+    position: relative;
+    top: 8px;
+}
+
+.flight .fare{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.flight .fare input{
+    margin-left: 10px;
+}
+
+.flight .passenger input{
+    position: relative;
+    width: 100px;
+}
+
+.flight.active{
+    transform: translateX(0px);
+}
+.flight button{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.flight button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: .5s;
+}
+
+
+
+.trains{
+    display: flex;
+    padding-left: 12px;
+    transform: translateX(200px);
+    transition: .2s transform ease-in-out;
+}
+.trains.active{
+    transform: translateX(-1000px);
+}
+
+.trains .trip{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.trains .trip input{
+    margin-left: 10px;
+}
+.trains .input-4{
+    display: flex;
+}
+.trains .input-4 input{
+    height: 70px;
+    font-size: 18px;
+    padding-left: 10px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+}
+.trains .input-4 input:active{
+    border: none;
+    outline: none;
+}
+
+.trains .input-4 i{
+    position: relative;
+    right: 574px;
+    top: 30px;
+    border: 2px solid rgb(4, 50, 50);
+    font-size: 24px;
+    border-radius: 15px;
+    color: rgb(4, 50, 50);
+}
+.trains .input-4 select{
+    width: 100px;
+    height: 74px;
+    position: relative;
+    top: 8px;
+}
+
+.trains .fare{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.trains .fare input{
+    margin-left: 5px;
+}
+.trains .passenger input{
+    position: relative;
+    width: 100px;
+}
+.trains button{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.trains button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: .5s;
+}
+
+.bus{
+    display: flex;
+    padding-left: 12px;
+    transform: translateX(0);
+    transition: .2s transform ease-in-out;
+}
+
+.bus.active{
+    transform: translateX(-2030px);
+}
+
+.bus .trip{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.bus .trip input{
+    margin-left: 10px;
+}
+.bus .input-4{
+    display: flex;
+}
+.bus .input-4 input{
+    height: 70px;
+    font-size: 18px;
+    padding-left: 10px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+}
+.bus .input-4 input:active{
+    border: none;
+    outline: none;
+}
+.bus .input-4 select{
+    width: 100px;
+    height: 74px;
+    position: relative;
+    top: 8px;
+}
+
+.bus .input-4 i{
+    position: relative;
+    right: 574px;
+    top: 30px;
+    border: 2px solid rgb(4, 50, 50);
+    font-size: 24px;
+    border-radius: 15px;
+    color: rgb(4, 50, 50);
+}
+
+.bus .fare{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.bus .fare input{
+    margin-left: 5px;
+}
+.bus .passenger input{
+    position: relative;
+    width: 100px;
+}
+
+.bus button{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.bus button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: .5s;
+}
+
+
+
+.Hotel{
+    display: flex;
+    padding-left: 12px;
+    transform: translateX(0);
+    transition: .2s transform ease-in-out;
+}
+.Hotel.active{
+    transform: translateX(-2915px);
+}
+
+.Hotel .trip{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.Hotel .trip input{
+    margin-left: 10px;
+}
+.Hotel .input-4{
+    display: flex;
+}
+.Hotel .input-4 input{
+    height: 70px;
+    font-size: 18px;
+    padding-left: 10px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+}
+.Hotel .input-4 input:active{
+    border: none;
+    outline: none;
+}
+
+.Hotel .input-4 i{
+    position: relative;
+    right: 574px;
+    top: 30px;
+    border: 2px solid rgb(4, 50, 50);
+    font-size: 24px;
+    border-radius: 15px;
+    color: rgb(4, 50, 50);
+}
+
+.Hotel .fare{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.Hotel .fare input{
+    margin-left: 5px;
+}
+
+.Hotel .passenger input{
+    position: relative;
+    width: 100px;
+}
+.Hotel button{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.Hotel button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+.wrapper{
+    position: relative;
+    top: -550px;
+    left: 31%;
+    width: 400px;
+    height: 440px;
+    border: 2px solid rgba(5, 5, 5, 0.9);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease ,height .2s ease;
+}
+
+.wrapper.active {
+    height: 540px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 20px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 88%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 40px 20px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-30%);
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -4px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 700;
+}
+.input-box .icon-1{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+    color: black;
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: black;
+    font-weight: 300;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: black;
+}
+.btn-1{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    margin: 6px 1px;
+}
+
+.login-register{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 35px 0 10px;
+}
+
+.login-register a{
+    color: black;
+    text-decoration: none;
+}
+.wrapper .icon-close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 1.0em;
+    color: black;
+    display: flex;
+    align-items: right;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(420px);
+}
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-100%);
+}
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.second-1{
+    /*border: 2px solid black;*/
+    width: 730px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    /*box-shadow: 0px 0px 7px rgba(5, 5, 5, 0.7);*/
+    backdrop-filter: blur(8px);
+}
+
+.second-1 .item-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+}
+.second-1 .item-3 i{
+    font-size: 30px;
+}
+.second-1 .item-3 i:hover{
+    cursor: pointer;
+}
+.second-1 .item-3 a{
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+}
+
+.aboutus{
+    /*border: 2px solid black;*/
+    height: 700px;
+    /*width: 99%;*/
+    margin: 10px 0px;
+    /*margin-left: 7px;
+    background-color: blanchedalmond;*/
+    padding-top: 100px;
+}
+
+.text-centre{
+    text-align: center;
+    font-weight: 200px;
+    font-size: 45px;
+    padding: 15px 15px;
+    color: rgb(7, 7, 7);
+    text-shadow: 0px 0px 7px rgba(2, 2, 2, 0.4);
+    backdrop-filter: blur(5px);
+}
+.about .para-1{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: black;
+    backdrop-filter: blur(5px);
+
+}
+.about .para-2{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: black;
+    backdrop-filter: blur(5px);
+}
+
+.about-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-2 .item{
+    border: 2px solid rgb(11, 11, 11);
+    height: 360px;
+    width: 270px;
+    box-shadow: 0px 0px 9px rgb(4, 4, 4);
+    border: none;
+    backdrop-filter: blur(5px);
+    padding-left: 8px;
+    padding-top: 6px;
+
+}
+
+.about-2 .item p{
+    color: rgba(242,247,248,0.8);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.about-2 .item:hover{
+    cursor: text;
+}
+.about-2 .item img{
+    width: 250px;
+    height: 270px;
+    margin-left: 4px;
+    margin-top: 3px;
+    box-shadow: 0px 0px 10px rgb(10, 10, 10);
+    transition: 1s;
+    
+}
+/*.about-2 .item img:hover{
+    height: 300px;
+    width: 260px;
+}*/
+
+.about-2 .item .btn-3{
+    padding: 3px 3px;
+    font-size: 25px;
+    margin-left: 37px;
+    margin-top: 6px;
+    background: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    color: rgba(242,247,248,0.8);
+    transition: .5s;
+    border-color: aliceblue;
+}
+.about-2 .item .btn-3:hover{
+    padding: 5px 5px;
+}
+
+
+
+.contactus{
+    /*border: 2px solid black;*/
+    height: 200px;
+    /*width: 99%;*/
+    margin: 10px 0px;
+    /*margin-left: 7px;
+    background-color: blanchedalmond;*/
+}
+
+.contact{
+    color: rgb(239, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    backdrop-filter: blur(5px);
+}
+.contact p{
+    margin: 0 10px;
+    font-size: 20px;
+
+}
+.contact .icons i{
+    margin-right:20px ;
+    font-size: 20px;
+}
